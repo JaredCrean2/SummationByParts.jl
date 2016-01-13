@@ -5,12 +5,12 @@ include("symcubatures.jl")
 include("cubature.jl")
 
 using ArrayViews
-using PDESolverCommon
+using ODLCommonTools
 using .OrthoPoly
 using .SymCubatures
 using .Cubature
 
-export SBPOperator, TriSBP, TetSBP, Boundary, Interface, calcnodes, calcminnodedistance,
+export SBPOperator, TriSBP, TetSBP, calcnodes, calcminnodedistance,
   weakdifferentiate!, differentiate!, directionaldifferentiate!, 
   volumeintegrate!, mappingjacobian!, boundaryintegrate!,
   interiorfaceintegrate!
